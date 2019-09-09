@@ -1,57 +1,12 @@
-# Project Name
+# Apache Cassandra on Azure VMs Performance Experiments
+September 2019
 
-(short, 1-3 sentenced, description of the project)
+## Overview
+Many customers run Apache Cassandra in Azure and are looking for experiment-based guidance for tuning Cassandra on Azure VMs. This repo summarizes learnings from performing various relative performance tests of Apache Cassandra on different Azure VM configurations to answer a few common questions such as: 
+* What stripe/chunk size should I use for Cassandra data disks?
+* What is the impact of data disk caching? 
+* Will my cluster performance scale linearly if I add another Cassandra data center to my ring in another Azure region?
+* Is there a performance difference between `ext4` and `xfs` filesystems?
 
-## Features
+The goal of this repo is to share interesting learnings to help increase knowledge around how Apache Cassandra will behave and perform on various Azure VM configurations. It is not meant to be used as a benchmark of Cassandra on Azure, but rather as a summary of observations and conclusions from micro-scale tests comparing relative performance observed when tuning Azure VM and Cassandra configurations.
 
-This project framework provides the following features:
-
-* Feature 1
-* Feature 2
-* ...
-
-## Getting Started
-
-### Prerequisites
-
-(ideally very short, if any)
-
-- OS
-- Library version
-- ...
-
-### Installation
-
-(ideally very short)
-
-- npm install [package name]
-- mvn install
-- ...
-
-### Quickstart
-(Add steps to get up and running quickly)
-
-1. git clone [repository clone url]
-2. cd [respository name]
-3. ...
-
-
-## Demo
-
-A demo app is included to show how to use the project.
-
-To run the demo, follow these steps:
-
-(Add steps to start up the demo)
-
-1.
-2.
-3.
-
-## Resources
-
-(Any additional resources or related projects)
-
-- Link to supporting information
-- Link to similar sample
-- ...
