@@ -1,13 +1,6 @@
-## [project-title] Changelog
+## "Apache Cassandra on Azure VMs Performance Experiments" Changelog
 
-<a name="x.y.z"></a>
-# x.y.z (yyyy-mm-dd)
+<a name="1.0.0"></a>
+# 1.0.0 (2019-09-19)
 
-*Features*
-* ...
-
-*Bug Fixes*
-* ...
-
-*Breaking Changes*
-* ...
+* Initial version of learnings from experiments performed May through June 2019.
