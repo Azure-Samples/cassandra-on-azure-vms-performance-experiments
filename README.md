@@ -51,5 +51,5 @@ For more details see [setup of Azure VMs used in Cassandra tests](docs/cassandra
 
 ## Appendix
 
-* [Sample for deploying Apache Cassandra on Azure IaaS and running cassandra-stress tests](https://github.com/azure-Samples/cassandra-on-azure-vms-deployment-and-stress-test) (GitHub)
+* Coming Soon - Sample for deploying Apache Cassandra on Azure IaaS and running cassandra-stress tests (GitHub)
 
