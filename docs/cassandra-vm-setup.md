@@ -1,7 +1,5 @@
 # Setup of Azure VMs used in Cassandra tests
 
-> TODO: Refer to https://github.com/slyons/helenus for automation scripts that deploy and configure Cassandra test clusters. Description below provides a high-level overview of the setup we used.
-
 For Cassandra test clusters, we deployed 6 "OpenLogic:CentOS:7.5:latest" Special_CCX_DS14_v2/Standard_DS14_v2 VMs into an Availability Set, each VM had 4 attached P30 (1TB) premium managed disks (caching was either None or ReadOnly depending on the tests), and Accelerated Networking enabled. For client VM, we used Standard_DS14_v2 in the same VNet but in a separate subnet (i.e. /vnet1/default for servers and /vnet1/clients for clients).
 
 After deploying the VMs, we updated CentOS, installed generic Linux perf test tools, and setup RAID0 stripe set:
