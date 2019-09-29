@@ -1,6 +1,6 @@
 # Comparing impact of disk read-ahead settings
 
-The [usual recommendation](https://docs.datastax.com/en/dse/5.1/dse-dev/datastax_enterprise/config/configOptimizeSsds.html) for Cassandra clusters using direct-attached SSDs, is to set the Linux device read_ahead_kb value to **8KB**. This is because Cassandra's read I/O is usually random and relatively small, and having a large read-ahead would waste throughput by reading parts of files that are not needed.
+The [usual recommendation](https://docs.datastax.com/en/dse/5.1/dse-dev/datastax_enterprise/config/configRecommendedSettings.html#configOptimizeSsds__optimizeSsds) for Cassandra clusters using direct-attached SSDs, is to set the Linux device read_ahead_kb value to **8KB**. This is because Cassandra's read I/O is usually random and relatively small, and having a large read-ahead would waste throughput by reading parts of files that are not needed.
 
 During initial read testing, we were running iostat and observed a lot of I/O merging in what appeared to be sequential I/O patterns, which was surprising since we expected to see random I/O during Cassandra reads. 
 
